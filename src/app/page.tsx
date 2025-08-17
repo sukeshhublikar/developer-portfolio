@@ -8,15 +8,17 @@ import ProjectCard from '@/components/ProjectCard'
 import ThemeToggle from '@/components/ThemeToggle'
 
 const skills = [
-  { name: 'JavaScript', icon: '🟨' },
-  { name: 'TypeScript', icon: '🔷' },
+  { name: 'JavaScript', icon: '/developer-portfolio/logos/javascript.svg' },
+  { name: 'TypeScript', icon: '/developer-portfolio/logos/typescript.svg' },
+  { name: 'JS', icon: '/developer-portfolio/logos/javascript.svg' },
+  { name: 'TS', icon: '/developer-portfolio/logos/typescript.svg' },
   { name: 'React', icon: '⚛️' },
   { name: 'React Native', icon: '📱' },
-  { name: 'Next.js', icon: '▲' },
-  { name: 'Node.js', icon: '🟢' },
+  { name: 'Next.js', icon: '/developer-portfolio/logos/nextjs.svg' },
+  { name: 'Node.js', icon: '/developer-portfolio/logos/nodejs.svg' },
+  { name: 'OpenAI', icon: '/developer-portfolio/logos/openai.svg' },
   { name: 'AI Integration', icon: '🤖' },
   { name: 'OpenAI API', icon: '🧠' },
-  { name: 'Machine Learning', icon: '🔮' },
   { name: 'Express', icon: '🚀' },
   { name: 'Redux', icon: '🔄' },
   { name: 'Zustand', icon: '🐻' },
@@ -25,7 +27,7 @@ const skills = [
   { name: 'PostgreSQL', icon: '🐘' },
   { name: 'Elasticsearch', icon: '🔍' },
   { name: 'Python', icon: '🐍' },
-  { name: 'AWS', icon: '☁️' },
+  { name: 'AWS', icon: '/developer-portfolio/logos/aws.svg' },
   { name: 'Docker', icon: '🐳' },
   { name: 'Git', icon: '📝' },
   { name: 'VS Code', icon: '💻' },
@@ -39,47 +41,47 @@ const projects = [
     tech: ['React', 'TypeScript', 'Vite', 'Material-UI', 'NPM Publishing', 'Open Source'],
     github: 'https://github.com/sukeshhublikar/react-visual-annotator',
     demo: 'https://www.npmjs.com/package/react-visual-annotator',
-    image: '/api/placeholder/400/300'
+    image: 'https://via.placeholder.com/400x300'
   },
   {
     title: 'Console & Data Catalog Tools',
     description: 'Unified application consolidating all catalog tools with single sign-on, permission management, and cross-application notification system. Includes reusable SDK for APIs.',
     tech: ['React', 'Next.js', 'Tailwind CSS', 'Java', 'MySQL'],
-    github: 'https://github.com/sukeshhublikar',
-    demo: 'https://rakuten.com',
-    image: '/api/placeholder/400/300'
+    // github: 'https://github.com/sukeshhublikar',
+    // demo: 'https://rakuten.com',
+    image: 'https://via.placeholder.com/400x300'
   },
   {
     title: 'Gastryda Bidding Platform',
     description: 'Online bidding platform for oil and gas industry. Features user management, real-time bidding, negotiations, and deal management with responsive design.',
     tech: ['React', 'Go', 'Ant Design', 'PostgreSQL'],
-    github: 'https://github.com/sukeshhublikar',
-    demo: 'https://gastryda.com',
-    image: '/api/placeholder/400/300'
+    // github: 'https://github.com/sukeshhublikar',
+    // demo: 'https://gastryda.com',
+    image: 'https://via.placeholder.com/400x300'
   },
   {
     title: 'Opendev Property Platform',
     description: 'Property marketplace enabling users to buy, sell, and negotiate real estate online. Includes payment integration, email templates, and cross-browser compatibility.',
     tech: ['React', 'Go', 'Ant Design', 'PostgreSQL'],
-    github: 'https://github.com/sukeshhublikar',
-    demo: 'https://opendev.com',
-    image: '/api/placeholder/400/300'
+      // github: 'https://github.com/sukeshhublikar',
+      // demo: 'https://opendev.com',
+    image: 'https://via.placeholder.com/400x300'
   },
   {
     title: 'EzzHealth Medical Portal',
     description: 'Healthcare platform for finding doctors, hospitals, and clinics with appointment booking system. Improved search algorithms and customer satisfaction by 40%.',
     tech: ['React', 'Node.js', 'Express', 'Bootstrap', 'Elasticsearch', 'MongoDB'],
-    github: 'https://github.com/sukeshhublikar',
-    demo: 'https://ezzhealth.com',
-    image: '/api/placeholder/400/300'
+    // github: 'https://github.com/sukeshhublikar',
+    // demo: 'https://ezzhealth.com',
+    image: 'https://via.placeholder.com/400x300'
   },
   {
     title: 'React Native Mobile Solutions',
     description: 'Cross-platform mobile applications with advanced configuration management, splash screens, and autocomplete functionality. Expertise in iOS and Android development.',
     tech: ['React Native', 'JavaScript', 'iOS', 'Android', 'Objective-C'],
-    github: 'https://github.com/sukeshhublikar',
-    demo: 'https://github.com/sukeshhublikar',
-    image: '/api/placeholder/400/300'
+      // github: 'https://github.com/sukeshhublikar',
+      // demo: 'https://github.com/sukeshhublikar',
+    image: 'https://via.placeholder.com/400x300'
   }
 ]
 
@@ -207,7 +209,7 @@ export default function Home() {
               className="flex justify-center"
             >
               <motion.a
-                href="/sukesh-hublikar-resume.pdf"
+                href="/developer-portfolio/sukesh-hublikar-resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300"

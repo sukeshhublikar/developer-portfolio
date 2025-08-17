@@ -7,8 +7,8 @@ interface ProjectCardProps {
   title: string
   description: string
   tech: string[]
-  github: string
-  demo: string
+  github?: string
+  demo?: string
   image?: string
   index: number
 }
@@ -63,7 +63,7 @@ export default function ProjectCard({
         
         {/* Action Buttons */}
         <div className="flex space-x-4">
-          <motion.a
+        {github && <motion.a
             href={github}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -73,7 +73,8 @@ export default function ProjectCard({
           >
             <Github size={18} className="group-hover/btn:rotate-12 transition-transform" />
             <span className="font-medium">Code</span>
-          </motion.a>
+          </motion.a>}
+          {demo && (
           <motion.a
             href={demo}
             whileHover={{ scale: 1.05 }}
@@ -84,7 +85,7 @@ export default function ProjectCard({
           >
             <ExternalLink size={18} className="group-hover/btn:rotate-12 transition-transform" />
             <span className="font-medium">Demo</span>
-          </motion.a>
+          </motion.a>)}
         </div>
       </div>
     </motion.div>
